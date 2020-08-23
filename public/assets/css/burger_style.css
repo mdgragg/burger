@@ -29,3 +29,9 @@ h1 {
     background: #262626;
     color: white;
 }
+
+.right-container a{
+    color: grey;
+    position: absolute;
+    bottom: 25px;
+}

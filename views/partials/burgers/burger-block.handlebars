@@ -2,8 +2,8 @@
 	{{burger_name}}
 
 	<button class="change-devour" data-id="{{id}}" data-newdevoured="{{devour}}">
-		{{#if devoured}}EAT AGAIN!{{else}}EAT NOW!{{/if}}
+		{{#if devoured}} <i class="fas fa-utensils"></i> EAT AGAIN!{{else}} <i class="fas fa-utensils"></i> EAT NOW!{{/if}}
 	</button>
 
-	<button class="delete-burger" data-id="{{this.id}}">DELETE!</button>
+	<button class="delete-burger" data-id="{{this.id}}"><i class="fas fa-trash-alt"></i> DELETE! </button>
 </li>
