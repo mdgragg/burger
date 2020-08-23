@@ -1,5 +1,4 @@
 
-
 <h1>Eat Da Burgers</h1>
 
 <div class="flex-container">
@@ -10,20 +9,16 @@
                 <label for="burg">Burger Name:</label>
                 <input type="text" id="bur" name="name">
                 <button type="submit" id="create-burger" class="btn-lg"> Add <span>
-                    <i class="fas fa-hamburger"></i></span></button>
-
-                  <div class="form-group">
-                    <input type="radio" name="devoured" value="0" checked> Eat later 
-                    <input type="radio" name="devoured" value="1"> Devoured!<br><br>
-                  </div>
-
+                    <i class="fas fa-hamburger"></i></span></button><br>
+                <input type="radio" name="devoured" value="0" checked> Eat later 
+                <input type="radio" name="devoured" value="1"> Devoured!
 
             </div>
         </form>
     </div>
 
     <div>
-      <h2>Burgers I want to eat:</h2>
+      <h2>Waiting to be Devoured:</h2>
         <ul>
             {{#each burgers}}
             {{#unless devoured}}
@@ -34,7 +29,7 @@
     </div>
 
     <div>
-      <h2>Burgers I have devoured:</h2>
+      <h2>Devoured Burgers:</h2>
         <ul>
             {{#each burgers}}
             {{#if devoured}}
