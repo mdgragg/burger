@@ -28,10 +28,63 @@ h1 {
 .right-container {
     background: #262626;
     color: white;
+    padding: 25px;
+}
+.right-container a{ color: grey;  position: absolute; bottom: 25px;}
+
+.form-title {
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    margin-left: 10px;
 }
 
-.right-container a{
-    color: grey;
-    position: absolute;
-    bottom: 25px;
+.burger-title {
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-bottom: -30px;
+    width: 100%;
+}
+
+.input-box {
+    background: dimgray;
+    padding: 10px;
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.radio input {    margin-left: 20px;}
+
+.create-form button{ padding: 11px; background-color: #faed26; color: #262626; }
+.burger-box button i{ color: #faed26;}
+button { background-color: dimgrey; padding: 5px; border: none; color: lightgrey;}
+button:hover { opacity: .7;}
+
+.burger-box li{ padding: 10px 0px; font-weight: bolder;}
+.burger-box {
+    background: dimgray;
+    padding: 15px;
+    list-style-type: none;
+    margin-top: -20px;
+}
+
+input[type=text] {color: white; }
+input[type=text]:focus{ outline: 2px solid #262626;  }
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #d1d3d1;
+}
+input[type='radio']:checked:after {
+    background-color: #faed26;
+    visibility: visible;
+    border: 2px solid #faed26;
 }

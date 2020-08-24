@@ -1,27 +1,27 @@
  <div class="row">
     <div class="col-12 col-md-7 left-container">
     <img class="burger-img" src="https://github.com/mdgragg/burger/blob/master/public/assets/img/burger-photo.jpg?raw=true" alt="Burger-photo">
-    <h1>Eat Da Burgers</h1>
+    <h1>Eat Da Burger!</h1>
 </div>
 
 <div class="col-12 col-md-5 right-container">
     <div id="add">
-        <h2>Add a burger!</h2>
         <form class="create-form">
-            <div class="form-group">
-                <label for="burg">Burger Name:</label>
-                <input type="text" id="bur" name="name">
-                <button type="submit" id="create-burger" class="btn-lg"> Add <span>
-                    <i class="fas fa-hamburger"></i></span></button><br>
+            <label class="burger-title" for="burg">Burger Name:</label>
+            <input class="input-box col-8" type="text" id="bur" name="name">
+            <button class="col-3" type="submit" id="create-burger" class="btn-lg"> Add <span>
+                <i class="fas fa-hamburger"></i></span></button><br>
+            
+            <sapn class="radio">
                 <input type="radio" name="devoured" value="0" checked> Eat later 
                 <input type="radio" name="devoured" value="1"> Devoured!
-            </div>
+            </sapn>
         </form>
     </div>
 
     <div>
-      <h2>Waiting to be Devoured:</h2>
-        <ul>
+      <h2 class="form-title mt-4">Waiting to be Devoured:</h2>
+        <ul class="burger-box">
             {{#each burgers}}
             {{#unless devoured}}
             {{> burgers/burger-block devour=true}}
@@ -31,8 +31,8 @@
     </div>
 
     <div>
-      <h2>Devoured Burgers:</h2>
-        <ul>
+      <h2 class="form-title">Devoured Burgers:</h2>
+        <ul class="burger-box">
             {{#each burgers}}
             {{#if devoured}}
             {{> burgers/burger-block devour=false}}
