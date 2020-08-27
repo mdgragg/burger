@@ -26,7 +26,7 @@ View [Deployed App](https://burgers-mdg.herokuapp.com/)
 
 Demo below shows how application works:
 
-![Demo](https://github.com/mdgragg/burger/blob/master/public/assets/img/Demo.mp4?raw=true)
+![Demo](https://github.com/mdgragg/burger/blob/master/public/assets/img/Demo.gif?raw=true)
 
 
 
